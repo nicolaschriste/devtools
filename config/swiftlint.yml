@@ -8,6 +8,8 @@ disabled_rules:
 - cyclomatic_complexity
 - for_where  
 - large_tuple
+- todo
+
 
 opt_in_rules:
 # Prefer using AnyObject over class for class-only protocols
@@ -102,3 +104,14 @@ opt_in_rules:
 
 # The variable should be placed on the left, the constant on the right of a comparison operator.
 - yoda_condition
+
+# limit line lenght to 120.
+line_length: 120
+
+# limit line lenght to 120.
+identifier_name:
+  min_length: 3
+  excluded:
+  - id
+
+reporter: "xcode"
